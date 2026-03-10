@@ -1,12 +1,12 @@
 package ReizenOpAnoniemOV;
 
-public class Kaart {
+public class kaart {
 
 	private Double saldo;
 	private String kaartnummer;
 	private Boolean ingecheckt;
 	
-	public Kaart() {
+	public kaart() {
 	}
 
 }

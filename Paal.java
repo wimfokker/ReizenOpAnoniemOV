@@ -1,5 +1,5 @@
 package ReizenOpAnoniemOV;
 
-public class Paal {
+public class paal {
 
 }
