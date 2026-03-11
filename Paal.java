@@ -1,5 +1,10 @@
 package ReizenOpAnoniemOV;
 
-public class paal {
+public class Paal {
+	
+	private Double instapTarief;
+	
 
 }
+
+
