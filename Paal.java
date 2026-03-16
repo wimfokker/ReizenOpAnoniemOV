@@ -5,17 +5,17 @@ public class Paal
 	
 	private Double instapTarief;
 	
-	public void scannedKaart() {
+		
+	
+	public void inChecken(OVKaart kaart) {
+		
+		if (kaart.getSaldo() >= instapTarief) {
+			
+			
+		}
 		
 	}
 	
-	public void inChecken(Double instapTarief) {
-		
-	}
-	
-	public void saldoCheck() {
-		
-	}
 }
 
 
