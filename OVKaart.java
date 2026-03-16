@@ -3,11 +3,11 @@ package ReizenOpAnoniemOV;
 public class OVKaart {
 
 	private Double saldo;
-	private int kaartNummer;
+	private Integer kaartNummer;
 	private Boolean checkKaart;
-	private 
-	
-	public OVKaart() {
+
+
+	public OVKaart(Double saldo, Integer kaartNummer, Boolean checkKaart) {
 	}
 
 }
