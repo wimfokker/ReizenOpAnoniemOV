@@ -3,16 +3,28 @@ package ReizenOpAnoniemOV;
 public class OVKaart {
 
 	private Double saldo;
-	private Integer kaartNummer;
-	private Boolean checkKaart;
-	
-	public Double getSaldo() {
-		return saldo;
-		
+	private Boolean geldigheid;
+	private Boolean ingecheckt;
+
+	// constructeur
+	public OVKaart(Double saldo, Boolean geldigheid, Boolean ingecheckt) {
+
+		this.saldo = saldo;
+		this.geldigheid = geldigheid;
+		this.ingecheckt = ingecheckt;
+
 	}
 
+	public Double getSaldo() {
+		return saldo;
+	}
 
-	public OVKaart(Double saldo, Integer kaartNummer, Boolean checkKaart) {
+	public Boolean getGeldigheid() {
+		return geldigheid;
+	}
+
+	public Boolean getIngecheckt() {
+		return ingecheckt;
 	}
 
 }
