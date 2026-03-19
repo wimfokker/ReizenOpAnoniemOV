@@ -3,6 +3,12 @@ package ReizenOpAnoniemOV;
 public class Paal {
 
 	private Double instapTarief;
+	
+	// sla de instapTarief gegevens op.
+
+	public Paal(Double instapTarief) {
+		this.instapTarief = instapTarief;
+	}
 
 	public void inChecken(OVKaart kaart) {
 
