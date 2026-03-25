@@ -3,8 +3,8 @@ package ReizenOpAnoniemOV;
 public class Paal {
 
 	private Double instapTarief;
-	
-	// sla de instapTarief gegevens op.
+
+	// Sla de instapTarief gegevens op.
 
 	public Paal(Double instapTarief) {
 		this.instapTarief = instapTarief;

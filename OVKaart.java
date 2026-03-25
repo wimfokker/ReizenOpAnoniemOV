@@ -8,7 +8,7 @@ public class OVKaart {
 	// to do:
 	// bedrag aftrekken van het saldo.
 	// meegeven van een double
-	
+
 	// functie maken die noemen we inchecken en die moet igecheckt van dat
 	// variabelen naar false en true.
 
@@ -26,8 +26,8 @@ public class OVKaart {
 	public void inchecken() {
 		this.ingecheckt = true;
 	}
-	
-	//meegeven van een double
+
+	// meegeven van een double
 	public void aftrekken(Double bedrag) {
 		this.saldo = this.saldo - bedrag;
 	}
