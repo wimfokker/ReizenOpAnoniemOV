@@ -25,4 +25,8 @@ public class Paal {
 		}
 
 	}
+	
+	public void uitChecken(OVKaart kaart) {
+		
+	}
 }
