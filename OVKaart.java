@@ -26,6 +26,11 @@ public class OVKaart {
 	public void inchecken() {
 		this.ingecheckt = true;
 	}
+	
+	// maak een methode uitchecken voor true false.
+	public void uitchecken() {
+		this.ingecheckt = false;
+	}
 
 	// meegeven van een double
 	public void aftrekken(Double bedrag) {

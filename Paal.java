@@ -2,15 +2,18 @@ package ReizenOpAnoniemOV;
 
 public class Paal {
 
-	private Double instapTarief;
+	private Double instapTarief = 20.00;
 
 	// Sla de instapTarief gegevens op.
+	
+	public Paal() {
+	}
 
 	public Paal(Double instapTarief) {
 		this.instapTarief = instapTarief;
 	}
 
-	public void inChecken(OVKaart kaart) {
+	public void inchecken(OVKaart kaart) {
 
 		if (kaart.getGeldigheid() == true) {
 			if (kaart.getSaldo() >= instapTarief) {
@@ -26,7 +29,7 @@ public class Paal {
 
 	}
 	
-	public void uitChecken(OVKaart kaart) {
+	public void uitchecken(OVKaart kaart) {
 		
 	}
 }
