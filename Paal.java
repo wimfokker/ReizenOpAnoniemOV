@@ -3,12 +3,11 @@ package ReizenOpAnoniemOV;
 public class Paal {
 
 	private Double instapTarief = 20.00;
-
-	// Sla de instapTarief gegevens op.
 	
 	public Paal() {
 	}
 
+	// Sla de instapTarief gegevens op.
 	public Paal(Double instapTarief) {
 		this.instapTarief = instapTarief;
 	}
@@ -22,7 +21,7 @@ public class Paal {
 				System.out.println("Je bent ingechekt");
 
 			} else {
-				System.out.println("Je bent niet ingechekckt");
+				System.out.println("Je bent niet ingechekckt - te weinig saldo");
 			}
 
 		}
