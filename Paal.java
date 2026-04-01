@@ -18,10 +18,10 @@ public class Paal {
 			if (kaart.getSaldo() >= instapTarief) {
 				kaart.aftrekken(instapTarief);
 				kaart.inchecken();
-				System.out.println("Je bent ingechekt");
+				System.out.println("Je bent ingecheckt");
 
 			} else {
-				System.out.println("Je bent niet ingechekckt - te weinig saldo");
+				System.out.println("Je bent niet ingecheckt");
 			}
 
 		}
@@ -29,6 +29,8 @@ public class Paal {
 	}
 	
 	public void uitchecken(OVKaart kaart) {
+		
+		
 		
 	}
 }
