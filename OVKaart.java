@@ -5,6 +5,7 @@ public class OVKaart {
 	private Double saldo;
 	private Boolean geldigheid;
 	private Boolean ingecheckt;
+	private Locatie instapLocatie;
 	// to do:
 	// bedrag aftrekken van het saldo.
 	// meegeven van een double
@@ -23,18 +24,25 @@ public class OVKaart {
 
 	// Maak een methode inchecken voor de true en false.
 
-	public void inchecken() {
+	public void inchecken(Locatie locatie) {
 		this.ingecheckt = true;
+		this.instapLocatie = locatie;
 	}
 	
 	// maak een methode uitchecken voor true false.
 	public void uitchecken() {
 		this.ingecheckt = false;
+		this.instapLocatie = null;
 	}
 
 	// meegeven van een double
 	public void aftrekken(Double bedrag) {
 		this.saldo = this.saldo - bedrag;
+	}
+	
+	//terug storten van anuleren
+	public void toevoegen(Double bedrag) {
+		this.saldo = this.saldo + bedrag;
 	}
 
 	// return waarde opvragen
@@ -48,6 +56,10 @@ public class OVKaart {
 
 	public Boolean getIngecheckt() {
 		return ingecheckt;
+	}
+	
+	public Locatie getInstapLocatie() {
+		return instapLocatie;
 	}
 
 }
