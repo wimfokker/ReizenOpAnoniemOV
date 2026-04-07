@@ -60,7 +60,7 @@ public class Paal {
 			kaart.aftrekken(reiskosten);
 			kaart.uitchecken();
 			System.out.println("uitgecheckt");
-			System.out.println("Saldo na het reis:" + kaart.getSaldo());
+			System.out.println("Saldo na het reis: €" + kaart.getSaldo());
 		}
 	}		
 }

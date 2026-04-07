@@ -9,17 +9,18 @@ public class Driver {
 		// En ook inchecken aanmaken.
 		// Geef de instaptarief een waarde
 		
-		Locatie nijmegen = new Locatie(0.0, 0.0, "Nijmegen");
-		Locatie amsterdam = new Locatie(120.0, 40.0, "Amsterdam");
+		// locaties
+		Locatie nijmegen = new Locatie(5.40, 6.00, "Nijmegen");
+		Locatie maastricht = new Locatie(4.00, 1.0, "Maastricht");
 		
 		Paal paalNijmegen = new Paal(nijmegen);
-		Paal paalAmsterdam = new Paal(amsterdam);
+		Paal paalMaastricht = new Paal(maastricht);
 		
-		OVKaart Anoniemkaart = new OVKaart (20.00, true, false);
+		OVKaart Anoniemkaart = new OVKaart (40.00, true, false);
 		
 		System.out.println("saldo voor het reis: €" + Anoniemkaart.getSaldo());
 		paalNijmegen.inchecken(Anoniemkaart);
-		paalAmsterdam.uitchecken(Anoniemkaart);
+		paalMaastricht.uitchecken(Anoniemkaart);
 		
 		
 		 System.out.println();
