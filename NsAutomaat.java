@@ -6,19 +6,21 @@ public class NsAutomaat {
 	
 	public boolean scan(OVKaart ovKaart) {
 		
-		if (ovKaart.getGeldigheid()) {
 		this.ovKaart = ovKaart;
-		System.out.println("Op uw OV-chipkaart");
-		return true; 
-		} else {
-			System.out.println("OV-chipkaart is niet geldig");
-			return false;
-		}
+		return ovKaart.getGeldigheid();
 	}
 	
-	public void opwaaderenMet() {
+	public void opwaaderenMet(Double bedrag) {
 		
+		OVKaart kaart = ovKaart;
+		if  (kaart != null) {
+			kaart.toevoegen(bedrag);
+			System.out.println("Saldo opwaaderen met:" + bedrag);
+			System.out.println("Nieuwe saldo: " + kaart.getSaldo());
+	} else {
+		System.out.println("geen kaart");
 	}
+}
 	
 	public void aanvullenTot() {
 		
