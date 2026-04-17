@@ -56,8 +56,8 @@ public class Paal {
 			
 		} else {
 			//normaal uitchecken
-			double reiskosten = afstandKm * tariefTrein;
-			kaart.aftrekken(reiskosten);
+			double reisKosten = afstandKm * tariefTrein;
+			kaart.aftrekken(reisKosten);
 			kaart.uitchecken();
 			System.out.println("uitgecheckt");
 			System.out.println("Saldo na het reis: €" + kaart.getSaldo());
