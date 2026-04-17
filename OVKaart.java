@@ -28,7 +28,7 @@ public class OVKaart {
 		this.ingecheckt = true;
 		this.instapLocatie = locatie;
 	}
-	
+
 	// maak een methode uitchecken voor true false.
 	public void uitchecken() {
 		this.ingecheckt = false;
@@ -39,8 +39,8 @@ public class OVKaart {
 	public void aftrekken(Double bedrag) {
 		this.saldo = this.saldo - bedrag;
 	}
-	
-	//terug storten van anuleren
+
+	// terug storten van anuleren
 	public void toevoegen(Double bedrag) {
 		this.saldo = this.saldo + bedrag;
 	}
@@ -57,7 +57,7 @@ public class OVKaart {
 	public Boolean getIngecheckt() {
 		return ingecheckt;
 	}
-	
+
 	public Locatie getInstapLocatie() {
 		return instapLocatie;
 	}

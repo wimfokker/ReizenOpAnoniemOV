@@ -39,7 +39,8 @@ public class NsAutomaat {
 	}
 
 	public void stop() {
-
+		this.ovKaart = null;
+		System.out.println("Volgende klant");
 	}
 
 }
